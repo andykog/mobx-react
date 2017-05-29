@@ -37,7 +37,7 @@ export { propTypes as PropTypes };
 import { errorsReporter } from './observer';
 export const onError = fn => errorsReporter.on(fn);
 
-export default exports;
+exports.default = exports; // For backward compatibility
 
 /* DevTool support */
 if (typeof __MOBX_DEVTOOLS_GLOBAL_HOOK__ === 'object') {
